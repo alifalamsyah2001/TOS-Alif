@@ -17,19 +17,12 @@ else
         echo "Selamat Datang $NAMA"
 fi
 echo "--------------------------------------------------------"
-#Test pada file
-read -p "Input Nama File yang ingin dicari : " NFILE
-if [ -e $NFILE ]
+#Multiple Test
+read -p "Inputkan umur anda sekarang : " Z
+if [[ $Z -lt 18  &&  $Z -gt 50 ]]
 then
-        echo "File $NFILE berhasil ditemukan"
+        echo "Anda berhak mengakses program ini"
 else
-        echo "Tidak ditemukan file dengan nama $NFILE "
-fi
- 
-if [ -d $NFILE ]
-then
-        echo "File $NFILE merupakan direktori"
-else
-        echo "File $NFILE bukan merupakan direktori"
+        echo "Umur anda tidak memenuhi syarat untuk mengakses program ini"
 fi
 echo "--------------------------------------------------------"
