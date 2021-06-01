@@ -17,7 +17,6 @@ else
         echo "Selamat Datang $NAMA"
 fi
 echo "--------------------------------------------------------"
-
 #Multiple Test
 read -p "Inputkan umur anda sekarang : " Z
 if [[ $Z -lt 18  &&  $Z -gt 50 ]]
